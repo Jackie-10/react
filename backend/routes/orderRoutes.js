@@ -1,5 +1,5 @@
 import express from 'express';
-import Order from '../models/OrderModel.js';
+import Order from '../models/orderModel.js';
 import { isAdmin, isAuth } from '../utils.js';
 import User from '../models/userModel.js'
 
