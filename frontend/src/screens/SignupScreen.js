@@ -51,7 +51,7 @@ export default function SignupScreen() {
     };
 
     return (
-        <Container className="small-container" style={{ color: "white" }}>
+        <Container className="small-containe color__white">
             <Helmet>
                 <title>Sign Up</title>
             </Helmet>

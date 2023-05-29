@@ -138,7 +138,7 @@ export default function SearchScreen() {
                         <MessageBox variant="danger">{error}</MessageBox>
                     ) : (
                         <>
-                            <Row className="justify-content-between mb-3" style={{ color: "white" }}>
+                            <Row className="justify-content-between mb-3  color__white"  >
                                 <Col md={6}>
                                     <div>
                                         {countProducts === 0 ? 'No' : countProducts} Results

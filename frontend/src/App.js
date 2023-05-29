@@ -92,7 +92,7 @@ function App() {
                   {userInfo?.isAdmin === false || !userInfo ? (
                     <Link to="/cart" className="nav-link">
                       עגלה  {" "}
-                      <i className='fas fa-shopping-cart' style={{ color: "red" }}></i>
+                      <i className='fas fa-shopping-cart color__red' ></i>
                       {cart.cartItems.length > 0 && (
                         <Badge pill="danger">
                           {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
@@ -203,7 +203,7 @@ function App() {
           </Container>
         </main>
         <footer>
-          <div className='text-center' ><span>&#169;2023 All rights reservd</span></div>
+          <div className='text-center' ><span className='color__white display-6'>Jack's Store &#169;2023 All rights reservd</span></div>
         </footer>
       </div>
     </BrowserRouter>

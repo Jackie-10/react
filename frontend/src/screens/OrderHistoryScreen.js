@@ -57,14 +57,14 @@ export default function OrderHistoryScreen() {
                 <title>Order History</title>
             </Helmet>
 
-            <h1 style={{color: "white"}}>Order History</h1>
+            <h1 className='color__white'>Order History</h1>
             {loading ? (
                 <LoadingBox></LoadingBox>
             ) : error ? (
                 <MessageBox variant="danger">{error}</MessageBox>
             ) : (
                 <table className="table"  >
-                    <thead style={{color: "#99f6bf"}}>
+                    <thead className='color__mix_1'>
                         <tr>
                             <th>ORDER ID</th>
                             <th>ORDER DATE</th>
@@ -74,7 +74,7 @@ export default function OrderHistoryScreen() {
                             <th>ACTIONS</th>
                         </tr>
                     </thead>
-                    <tbody style={{color: "#07ffff"}}>
+                    <tbody className='color__mix_2'>
                         {orders.map((order) => (
                             <tr key={order._id}>
                                 <td>{order._id}</td>

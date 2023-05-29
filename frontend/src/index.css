@@ -129,3 +129,27 @@ button.thumbnail {
   border-radius: 3px 3px 0px 0px;
   color: rgb(249, 109, 109);
 }
+
+.color__white{
+  color: white;
+}
+
+.color__red{
+  color: red;
+}
+
+.color__mix_1{
+  color: #99f6bf;
+}
+
+.color__mix_2{
+  color: #07ffff
+}
+
+.color__mix_3{
+  color: #99f6bf;
+}
+
+.color__mix_4{
+  color: #07ffff;
+}

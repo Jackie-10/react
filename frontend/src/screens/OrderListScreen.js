@@ -97,7 +97,7 @@ export default function OrderListScreen() {
             <Helmet>
                 <title>Orders</title>
             </Helmet>
-            <h1>Orders</h1>
+            <h1 className='color__white'>Orders</h1>
             {loadingDelete && <LoadingBox/>}
             {loading ? (
                 <LoadingBox/>
@@ -105,7 +105,7 @@ export default function OrderListScreen() {
                 <MessageBox variant="danger">{error}</MessageBox>
             ) : (
                 <table className="table">
-                    <thead>
+                    <thead className='color__mix_1'>
                         <tr>
                             <th>ID</th>
                             <th>USER</th>
@@ -116,7 +116,7 @@ export default function OrderListScreen() {
                             <th>ACTIONS</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody className='color__mix_2'>
                         {orders.map((order) => (
                             <tr key={order._id}>
                                 <td>{order._id}</td>

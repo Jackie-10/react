@@ -31,8 +31,7 @@ export default function SigninScreen() {
             ctxDispatch({ type: 'USER_SIGNIN', payload: data });
             localStorage.setItem('userInfo', JSON.stringify(data));             
             navigate(redirect || '/');
-        } catch (err) {
-            //console.log(getError(err));
+        } catch (err) {            
             toast.error(getError(err));
         }
     }; 
@@ -44,7 +43,7 @@ export default function SigninScreen() {
     }, [navigate, redirect, userInfo]);
 
     return (
-        <Container className="small-container" style={{color: "white"}}>
+        <Container className="small-container color__white">
             <Helmet>
                 <title>Sign In</title>
             </Helmet>
