@@ -75,7 +75,7 @@ function App() {
       >
         <ToastContainer position="bottom-center" limit={1} />
         <header>
-          <Navbar bg="dark" variant="dark" expand="lg" className='navbar fixed-top pt-2 pb-3' >
+          <Navbar bg="dark" variant="dark" expand="lg" className='fixed-top pt-2 pb-3' >
             <Container>
               <Button variant="dark" onClick={() => setSidebarIsOpen(!sidebarIsOpen)} >
                 <i className="fas fa-bars"></i>
@@ -85,13 +85,13 @@ function App() {
                   <img
                     className='logo__image'
                     src="https://res.cloudinary.com/dpebf9bno/image/upload/v1684351748/lzgoveny5fadplghagy4.png"
-                    alt="logo_image"
+                    alt="logo img"
                   />
                 </Navbar.Brand>
               </LinkContainer>
 
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">&nbsp;
+              <Navbar.Collapse id="basic-navbar-nav">
                 <SearchBox />
                 <Nav className="me-auto  w-100  justify-content-end">
                   {userInfo?.isAdmin === false || !userInfo ? (
