@@ -92,6 +92,7 @@ function App() {
 
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
+                &nbsp;
                 <SearchBox />
                 <Nav className="me-auto  w-100  justify-content-end">
                   {userInfo?.isAdmin === false || !userInfo ? (
