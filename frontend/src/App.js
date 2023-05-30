@@ -8,7 +8,6 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { useContext, useEffect, useState } from 'react';
 import { Store } from './Store';
 import Nav from 'react-bootstrap/Nav';
-// import {Link} from 'react-router-dom';
 import Badge from 'react-bootstrap/Badge';
 import CartScreen from './screens/CartScreen';
 import SigninScreen from './screens/SigninScreen';
@@ -76,17 +75,23 @@ function App() {
       >
         <ToastContainer position="bottom-center" limit={1} />
         <header>
-          <Navbar bg="dark" variant="dark" expand="lg">
+          <Navbar bg="dark" variant="dark" expand="lg" className='navbar fixed-top pt-2 pb-3' >
             <Container>
               <Button variant="dark" onClick={() => setSidebarIsOpen(!sidebarIsOpen)} >
                 <i className="fas fa-bars"></i>
               </Button>&nbsp;
               <LinkContainer to="/">
-                <Navbar.Brand>חנות אינטרנט</Navbar.Brand>
+                <Navbar.Brand>
+                  <img
+                    className='logo__image'
+                    src="https://res.cloudinary.com/dpebf9bno/image/upload/v1684351748/lzgoveny5fadplghagy4.png"
+                    alt="logo_image"
+                  />
+                </Navbar.Brand>
               </LinkContainer>
 
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
+              <Navbar.Collapse id="basic-navbar-nav">&nbsp;
                 <SearchBox />
                 <Nav className="me-auto  w-100  justify-content-end">
                   {userInfo?.isAdmin === false || !userInfo ? (
@@ -195,9 +200,9 @@ function App() {
               <Route path="/admin/products" element={<AdminRoute> <ProductListScreen /></AdminRoute>} />
               <Route path="/admin/product/:id" element={<AdminRoute> <ProductEditScreen /> </AdminRoute>} />
               <Route path="/admin/orders" element={<AdminRoute> <OrderListScreen /> </AdminRoute>} />
-              <Route path="/admin/users" element={ <AdminRoute> <UserListScreen /></AdminRoute> } />
+              <Route path="/admin/users" element={<AdminRoute> <UserListScreen /></AdminRoute>} />
               <Route path="/admin/user/:id" element={<AdminRoute> <UserEditScreen /> </AdminRoute>} />
-              <Route path="/terms-of-service" element={<TermsOfServiceScreen />} />              
+              <Route path="/terms-of-service" element={<TermsOfServiceScreen />} />
               <Route path='/' element={<HomeScreen />} />
             </Routes>
           </Container>

@@ -9,17 +9,6 @@ body {
   /* color: #ffffff; */
 }
 
-/* header{
-  background-color: #404040;
-  padding: 1rem;
-}
-
-header>a{
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: none;
-} */
-
 .products {
   display: flex;
   flex-wrap: wrap;
@@ -41,7 +30,7 @@ header>a{
 }
 
 main {
-  /* padding: 1rem; */
+  padding: 3rem;
   flex: 1;
 }
 
@@ -62,7 +51,7 @@ main {
   height: 150px;
 }
 
-.prod-img > .card-img-top{
+.prod-img>.card-img-top {
   height: 400px;
 }
 
@@ -130,26 +119,59 @@ button.thumbnail {
   color: rgb(249, 109, 109);
 }
 
-.color__white{
+@media only screen and (max-width: 600px) { 
+.logo__image {  
+    margin-top: -27px;
+    max-width: 60%;
+    width: 60%;
+    height: 61px;   
+     position: absolute;
+    left: 17%;
+    }
+}
+
+@media only screen and (min-width: 600px) { 
+  .logo__image {  
+      margin-top: -27px;
+      max-width: 56%;
+      width: 56%;
+      height: 61px;   
+       position: absolute;
+      left: 20%;
+      }
+  }
+
+  @media only screen and (min-width: 990px) { 
+    .logo__image {  
+        margin-top: -27px;
+        max-width: 40%;
+        width: 40%;
+        height: 61px;   
+         position: absolute;
+        left: 32%;
+        }
+    }
+
+.color__white {
   color: white;
 }
 
-.color__red{
+.color__red {
   color: red;
 }
 
-.color__mix_1{
+.color__mix_1 {
   color: #99f6bf;
 }
 
-.color__mix_2{
+.color__mix_2 {
   color: #07ffff
 }
 
-.color__mix_3{
+.color__mix_3 {
   color: #99f6bf;
 }
 
-.color__mix_4{
+.color__mix_4 {
   color: #07ffff;
 }
