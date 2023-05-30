@@ -30,8 +30,11 @@ body {
 }
 
 main {
-  /* padding: 3rem; */
   flex: 1;
+}
+
+.fixed-top {
+  position: relative;
 }
 
 .site-container {
@@ -119,38 +122,38 @@ button.thumbnail {
   color: rgb(249, 109, 109);
 }
 
-@media only screen and (max-width: 600px) { 
-.logo__image {  
+@media only screen and (max-width: 600px) {
+  .logo__image {
     margin-top: -27px;
     max-width: 60%;
     width: 60%;
-    height: 61px;   
-     position: absolute;
+    height: 61px;
+    position: absolute;
     left: 17%;
-    }
+  }
 }
 
-@media only screen and (min-width: 600px) { 
-  .logo__image {  
-      margin-top: -27px;
-      max-width: 56%;
-      width: 56%;
-      height: 61px;   
-       position: absolute;
-      left: 20%;
-      }
+@media only screen and (min-width: 600px) {
+  .logo__image {
+    margin-top: -27px;
+    max-width: 56%;
+    width: 56%;
+    height: 61px;
+    position: absolute;
+    left: 20%;
   }
+}
 
-  @media only screen and (min-width: 990px) { 
-    .logo__image {  
-        margin-top: -27px;
-        max-width: 40%;
-        width: 40%;
-        height: 61px;   
-         position: absolute;
-        left: 32%;
-        }
-    }
+@media only screen and (min-width: 990px) {
+  .logo__image {
+    margin-top: -27px;
+    max-width: 40%;
+    width: 40%;
+    height: 61px;
+    position: absolute;
+    left: 32%;
+  }
+}
 
 .color__white {
   color: white;
