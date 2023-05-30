@@ -51,7 +51,7 @@ function HomeScreen() {
       <Helmet>
         <title>Web Store</title>
       </Helmet>
-      <h1 className="text-center color__white"  >Featured Products</h1>
+      <h1 className="text-center color__white pt-5"  >Featured Products</h1>
       <div className="products">
         {  
           loading ? (

@@ -33,10 +33,6 @@ main {
   flex: 1;
 }
 
-.fixed-top {
-  position: relative;
-}
-
 .site-container {
   min-height: 100vh;
 }
