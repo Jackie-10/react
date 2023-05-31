@@ -94,7 +94,7 @@ export default function UserListScreen() {
             ) : error ? (
                 <MessageBox variant="danger">{error}</MessageBox>
             ) : (
-                <table className="table-dark">
+                <table className="table">
                     <thead className='color__mix_1'>
                         <tr>
                             <th>ID</th>

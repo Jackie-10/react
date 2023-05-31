@@ -63,7 +63,7 @@ export default function OrderHistoryScreen() {
             ) : error ? (
                 <MessageBox variant="danger">{error}</MessageBox>
             ) : (
-                <table className="table-dark"  >
+                <table className="table"  >
                     <thead className='color__mix_1'>
                         <tr>
                             <th>ORDER ID</th>
