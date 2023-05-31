@@ -104,7 +104,7 @@ export default function OrderListScreen() {
             ) : error ? (
                 <MessageBox variant="danger">{error}</MessageBox>
             ) : (
-                <table className="table">
+                <table className="table-dark">
                     <thead className='color__mix_1'>
                         <tr>
                             <th>ID</th>
