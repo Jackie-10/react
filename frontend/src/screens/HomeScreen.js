@@ -51,7 +51,7 @@ function HomeScreen() {
       <Helmet>
         <title>Web Store</title>
       </Helmet>
-      <h1 className="text-center color__white pt-5"  >Featured Products</h1>
+      <h1 className="text-center color__white">Featured Products</h1>
       <div className="products">
         {  
           loading ? (
@@ -59,7 +59,7 @@ function HomeScreen() {
           ) : error ? (
             <MessageBox variant='danger'>{error}</MessageBox>
           ) : (
-            <Row> 
+            <Row>  
               {products.map(product => (
                 <Col key={product.slug} sm={6} md={4} lg={3} className="mb-3">  
                    <Product product={product}></Product>

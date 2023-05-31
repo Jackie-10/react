@@ -74,7 +74,8 @@ function App() {
         }
       >
         <ToastContainer position="bottom-center" limit={1} />
-        <header>
+        <header className='pt-5'>
+        &nbsp;
           <Navbar bg="dark" variant="dark" expand="lg" className='fixed-top pt-2 pb-3' >
             <Container>
               <Button variant="dark" onClick={() => setSidebarIsOpen(!sidebarIsOpen)} >
@@ -209,7 +210,7 @@ function App() {
           </Container>
         </main>
         <footer>
-          <div className='text-center' ><span className='color__white display-6'>Jack's Store &#169;2023 All rights reservd</span></div>
+          <div className='text-center' ><span className='color__white fs-5'>Jack's Store &#169;2023 All rights reservd</span></div>
         </footer>
       </div>
     </BrowserRouter>

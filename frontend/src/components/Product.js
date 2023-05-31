@@ -31,14 +31,31 @@ function Product(props) {
     return (
         <Card>
             <Link to={`/product/${product.slug}`} className='prod-img'>
-                <img src={product.image} alt="" className='card-img-top' />  
+                <img src={product.image} alt="" className='card-img-top' />
             </Link>
-            <Card.Body>
-                <Link to={`/product/${product.slug}`}>
-                    <Card.Title>{product.name}</Card.Title>
+            <Card.Body className='card_body'>
+                <Link to={`/product/${product.slug}`} style={{textDecoration: 'none'}}>
+                    <Card.Title style={{height: "35px"}}>{product.name}</Card.Title>
                 </Link>
                 <Rating rating={product.rating} numReviews={product.numReviews}></Rating>
                 <Card.Text>${product.price}</Card.Text>
+
+                {/* show stock count */}
+                <Card.Text>                    
+                    <strong>In Stock:</strong>{" "}
+                    {product.countInStock > 0 ? (                       
+                        <span className='color__green fw-bold'> 
+                            {" "}
+                            {product.countInStock} items{" "}
+                        </span>
+                    ) : (
+                        <span className='color__red fw-bold'>
+                            {" "}
+                            {product.countInStock} items{" "}
+                        </span>
+                    )}
+                </Card.Text>
+
                 {product.countInStock === 0 ? (
                     <Button variant='danger' disabled>חסר במלאי</Button>
                 ) : (

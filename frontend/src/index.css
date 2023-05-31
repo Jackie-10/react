@@ -118,6 +118,12 @@ button.thumbnail {
   color: rgb(249, 109, 109);
 }
 
+.card_body{
+  background: #d7feff;
+  height: 15rem;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 600px) {
   .logo__image {
     margin-top: -27px;
@@ -159,6 +165,10 @@ button.thumbnail {
   color: red;
 }
 
+.color__green{
+  color: green;
+}
+
 .color__mix_1 {
   color: #99f6bf;
 }
@@ -169,8 +179,4 @@ button.thumbnail {
 
 .color__mix_3 {
   color: #99f6bf;
-}
-
-.color__mix_4 {
-  color: #07ffff;
 }
