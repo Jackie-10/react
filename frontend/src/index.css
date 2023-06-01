@@ -170,7 +170,7 @@ button.thumbnail {
 }
 
 .color__mix_1 {
-  color: #99f6bf;
+  color: #99f6bf !important;
 }
 
 .color__mix_2 {
