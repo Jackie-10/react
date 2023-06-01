@@ -158,7 +158,7 @@ button.thumbnail {
 }
 
 .color__white {
-  color: rgb(231, 207, 207);
+  color: white;
 }
 
 .color__red {
@@ -177,3 +177,7 @@ button.thumbnail {
   color: #07ffff
 }
  
+.table{   
+  --bs-table-color: initial;
+  --bs-table-bg: transparent;
+}
