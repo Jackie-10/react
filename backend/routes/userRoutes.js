@@ -7,7 +7,7 @@ const userRouter = express.Router();
 
 userRouter.post("/signin", async (req, res) => {
   const user = await User.findOne({ email: req.body.email });
-  console.log(user); //נגיד אם יש משתמש על פי האימייל שלו
+  //נגיד אם יש משתמש על פי האימייל שלו
   if (user) {
     if (bcrypt.compareSync(req.body.password, user.password)) {
       //בכדי להשוות בין הסיסמה שכתב השתמש לסיסמה במסד compareSync נשתמש בפונקציה של
@@ -27,7 +27,7 @@ userRouter.post("/signin", async (req, res) => {
 
 userRouter.post("/forgot_password", async (req, res) => {
   const user = await User.findOne({ email: req.body.email });
-  console.log(user + " hhh"); //נגיד אם יש משתמש על פי האימייל שלו
+   //נגיד אם יש משתמש על פי האימייל שלו
   if (user) {
     res.send({ email: user.email });
     return;

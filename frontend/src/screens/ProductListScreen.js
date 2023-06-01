@@ -130,9 +130,8 @@ export default function ProductListScreen() {
 
     return (
         <div>
-            {/* <h1 style={{ color: "white" }}>Products</h1> */}
             <Row>
-                <Col><h1 style={{ color: "white" }}>Products</h1></Col>
+                <Col><h1 className='color__white'>Products</h1></Col>
                 <Col className="col text-end">
                     <div>
                         <Button type="button" onClick={createHandler}>
@@ -152,8 +151,8 @@ export default function ProductListScreen() {
                 <MessageBox variant="danger">{error}</MessageBox>
             ) : (
                 <>
-                    <table className="table" style={{ color: "white" }}>
-                        <thead style={{ color: "#99f6bf" }}>
+                    <table className="table color__white" >
+                        <thead className='color__mix_3'>
                             <tr>
                                 <th>PRODUCT ID</th>
                                 <th>PRODUCT NAME</th>
@@ -163,7 +162,7 @@ export default function ProductListScreen() {
                                 <th>ACTIONS</th>
                             </tr>
                         </thead>
-                        <tbody style={{ color: "#07ffff" }}>
+                        <tbody className='color__mix_4'>
                             {products.map((product) => (
                                 <tr key={product._id}>
                                     <td>{product._id}</td>
@@ -192,7 +191,6 @@ export default function ProductListScreen() {
                         {[...Array(pages).keys()].map((x) => (
 
                             <Link
-                                // style={{color: "white"}}                                                            
                                 className={x + 1 === Number(page) ? 'mx-1 btn text-bold btn-primary' : 'mx-1 btn-light btn'}
                                 key={x + 1}
                                 to={`/admin/products?page=${x + 1}`}

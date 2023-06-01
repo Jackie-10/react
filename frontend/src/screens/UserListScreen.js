@@ -87,7 +87,7 @@ export default function UserListScreen() {
             <Helmet>
                 <title>Users</title>
             </Helmet>
-            <h1>Users</h1>
+            <h1 className='color__white'>Users</h1>
             {loadingDelete && <LoadingBox />}
             {loading ? (
                 <LoadingBox />
@@ -95,7 +95,7 @@ export default function UserListScreen() {
                 <MessageBox variant="danger">{error}</MessageBox>
             ) : (
                 <table className="table">
-                    <thead>
+                    <thead className='color__mix_1'>
                         <tr>
                             <th>ID</th>
                             <th>USERNAME</th>
@@ -104,7 +104,7 @@ export default function UserListScreen() {
                             <th>ACTIONS</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody className='color__mix_2'>
                         {users.map((user) => (
                             <tr key={user._id}>
                                 <td>{user._id}</td>
@@ -112,11 +112,11 @@ export default function UserListScreen() {
                                 <td>{user.email}</td>
                                 <td>{user.isAdmin ? 'YES' : 'NO'}</td>
                                 <td>
-                                    <Button type="button" variant="dark" onClick={() => navigate(`/admin/user/${user._id}`)}>
+                                    <Button type="button" variant="light" onClick={() => navigate(`/admin/user/${user._id}`)}>
                                         Edit
                                     </Button>
                                     &nbsp;
-                                    <Button type="button" variant="light" onClick={() => deleteHandler(user)}>
+                                    <Button type="button" variant="danger" onClick={() => deleteHandler(user)}>
                                         Delete
                                     </Button>
 

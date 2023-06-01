@@ -46,18 +46,18 @@ export default function NewPasswordScreen() {
     }
 
     return (
-        <Container className="small-container" style={{ color: "white" }}>
+        <Container className="small-container color__white" >
             <Helmet>
                 <title>New Passoword</title>
             </Helmet>
             <h1 className="my-3">Enter new password</h1>
             <Form onSubmit={submitHandler}>
-             
+
                 <Form.Group className="mb-3" controlId="password">
                     <Form.Label>Enter the password sent</Form.Label>
                     <Form.Control onChange={(e) => setTmpPassword(e.target.value)} required />
                 </Form.Group>
-                
+
                 <Form.Group className="mb-3 e-input" controlId="password">
                     <Form.Label>Enter New Password</Form.Label>
                     <Form.Control disabled={true} type="password" required onChange={(e) => setPassword(e.target.value)} />
@@ -66,7 +66,7 @@ export default function NewPasswordScreen() {
                         <Form.Control type="password" onChange={(e) => setConfirmPassword(e.target.value)} required />
                     </Form.Group>
                 </Form.Group>
-     
+
                 <div className="mb-3">
                     <Button type="submit">Update</Button>
                 </div>

@@ -77,9 +77,7 @@ export default function ProfileScreen() {
         }
     }
 
-
-    const codeCheck = () => {
-        console.log(randomCode);
+    const codeCheck = () => {       
         if (code !== randomCode || code.length <= 0) {
             toast.error("Code is not valid, Check email");
             return;
@@ -129,7 +127,7 @@ export default function ProfileScreen() {
                 <title>{userInfo.username} Profile</title>
             </Helmet>
           
-            <h1 className="my-3" style={{color: "white"}}>{userInfo.username} 's Profile </h1>
+            <h1 className="my-3 color__white">{userInfo.username} 's Profile </h1>
             <ListGroup>
                 <ListGroup.Item>
                     <h6 className="my-3">Update Password:</h6>
