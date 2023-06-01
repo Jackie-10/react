@@ -160,8 +160,8 @@ button.thumbnail {
 .color__white {
   color: white;
 }
-
-.color__red {
+ 
+.color__red { 
   color: red;
 }
 
@@ -176,4 +176,3 @@ button.thumbnail {
 .color__mix_2 {
   color: #07ffff
 }
-

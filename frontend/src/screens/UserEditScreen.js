@@ -97,7 +97,9 @@ export default function UserEditScreen() {
     };
 
     return (
-        <Container className="small-container"> {/* color__white */}
+
+        <Container className="small-container color__white">
+
             <Helmet>
                 <title>Edit User {userId}</title>
             </Helmet>
@@ -156,7 +158,7 @@ export default function UserEditScreen() {
                         <Button disabled={loadingUpdate} type="submit">
                             Update
                         </Button>
-                        {loadingUpdate && <LoadingBox/>}
+                        {loadingUpdate && <LoadingBox />}
                     </div>
                 </Form>
             )}
