@@ -152,7 +152,7 @@ export default function ProductListScreen() {
             ) : (
                 <>
                     <table className="table color__white" >
-                        <thead className='color__mix_3'>
+                        <thead className='color__mix_1'>
                             <tr>
                                 <th>PRODUCT ID</th>
                                 <th>PRODUCT NAME</th>
@@ -162,7 +162,7 @@ export default function ProductListScreen() {
                                 <th>ACTIONS</th>
                             </tr>
                         </thead>
-                        <tbody className='color__mix_4'>
+                        <tbody className='color__mix_2'>
                             {products.map((product) => (
                                 <tr key={product._id}>
                                     <td>{product._id}</td>

@@ -118,7 +118,7 @@ button.thumbnail {
   color: rgb(249, 109, 109);
 }
 
-.card_body{
+.card_body {
   background: #d7feff;
   height: 15rem;
   text-decoration: none;
@@ -160,12 +160,12 @@ button.thumbnail {
 .color__white {
   color: white;
 }
- 
-.color__red { 
+
+.color__red {
   color: red;
 }
 
-.color__green{
+.color__green {
   color: green;
 }
 
@@ -175,4 +175,9 @@ button.thumbnail {
 
 .color__mix_2 {
   color: #07ffff
+}
+
+.table {
+  --bs-table-bg: transparent;
+  --bs-table-color: #07ffff;
 }
