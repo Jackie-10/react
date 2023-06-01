@@ -170,14 +170,10 @@ button.thumbnail {
 }
 
 .color__mix_1 {
-  color: #99f6bf !important;
+  color: #99f6bf;
 }
 
 .color__mix_2 {
   color: #07ffff
 }
-
-.table {
-  --bs-table-bg: transparent;
-  --bs-table-color: #07ffff;
-}
+ 

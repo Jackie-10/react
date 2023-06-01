@@ -151,7 +151,7 @@ export default function ProductListScreen() {
                 <MessageBox variant="danger">{error}</MessageBox>
             ) : (
                 <>
-                    <table className="table color__white" >
+                    <table className="table" >
                         <thead className='color__mix_1'>
                             <tr>
                                 <th>PRODUCT ID</th>
