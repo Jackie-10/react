@@ -34,7 +34,7 @@ export default function PaymentMethodScreen() {
             <title>Payment Method</title>
           </Helmet>
         
-        <div className="container small-container" style={{color: "white"}}>
+        <div className="container small-container color__white"  >
           <CheckoutSteps step1 step2 step3></CheckoutSteps>
           <h1 className="my-3">Payment Method</h1>
           <Form onSubmit={submitHandler}>
