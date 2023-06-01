@@ -146,13 +146,12 @@ function ProductScreen() {
           </ListGroup>
         </Col>
         <Col md={3}>
-          <Card>
+          <Card >
             <Card.Body>
               <ListGroup variant="flush">
                 <ListGroup.Item>
                   <Row>
-                    <Col>מחיר: {product.price} ש"ח</Col>
-                    {/* <Col></Col>                   */}
+                    <Col>מחיר: {product.price} ש"ח</Col>                   
                   </Row>
                 </ListGroup.Item>
                 <ListGroup.Item>
@@ -193,7 +192,7 @@ function ProductScreen() {
           </Card>
         </Col>
       </Row>
-      <div className="my-3">
+      <div className="my-3 color__white">
         <h2 ref={reviewsRef}>Reviews</h2>
         <div className="mb-3">
           {product.reviews.length === 0 && (

@@ -29,20 +29,20 @@ export default function ForgotPasswordScreen() {
 
         try {
             const { data } = await axios.post('/api/users/forgot_password', { email });
-            console.log(email + "-- " + data.email)
+            
             // ctxDispatch({ type: 'USER_SIGNIN', payload: data });
             // localStorage.setItem('userInfo', JSON.stringify(data));
             // setValidEmail(email)
             navigate('/new_password');
         } catch (err) {
-            console.log(email)
+            
             toast.error(getError(err));
         }
     };
 
 
     return (
-        <Container className="small-container" style={{ color: "white" }}>
+        <Container className="small-container color__white"  >
             <Helmet>
                 <title>Forgot Password</title>
             </Helmet>

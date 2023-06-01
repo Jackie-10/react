@@ -41,7 +41,7 @@ export default function ShippingAderressScreen() {
         <div>
             <Helmet>Shipping Address</Helmet>            
             
-            <div className="container small-container" style={{color: "white"}}>
+            <div className="container small-container color__white" >
                <h1 className="my-3" >Shipping Address</h1>
                <CheckoutSteps step1 step2></CheckoutSteps>
                 <Form onSubmit={submitHandler}>

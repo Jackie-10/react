@@ -297,7 +297,7 @@ export default function OrderScreen() {
             <Helmet>
                 <title>Order {orderId}</title>
             </Helmet>
-            <h1 className="my-3" style={{ color: "white" }}>Order {orderId} </h1>
+            <h1 className="my-3 color__white" >Order {orderId} </h1>
             <Row>
                 <Col md={8} >
                     <Card className="mb-3" >

@@ -79,7 +79,7 @@ export default function PlaceOrderScreen() {
             <Helmet>
                 <title>Preview Order</title>
             </Helmet>
-            <h1 className="my-3" style={{color: "white"}}>Preview Order</h1>
+            <h1 className="my-3 color__white"  >Preview Order</h1>
             <Row>
                 <Col md={8}>
                     <Card className="mb-3">

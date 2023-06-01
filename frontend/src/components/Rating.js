@@ -20,8 +20,8 @@ function Rating(props) {
       <span>
         <i className={rating >= 1 ? 'fas fa-star' : rating >= 0.5 ? 'fas fa-star-half-alt' : 'far fa-star'} />
       </span>
-      <p></p>
-       
+      <div></div>
+
       <span> ביקורות: &nbsp; {numReviews}</span>
     </div>
   );

@@ -97,7 +97,7 @@ export default function UserEditScreen() {
     };
 
     return (
-        <Container className="small-container">
+        <Container className="small-container color__white">
             <Helmet>
                 <title>Edit User {userId}</title>
             </Helmet>
